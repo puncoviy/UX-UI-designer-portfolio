@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Denis Novik | UX/UI designer</title>
-	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script> -->
 </head>
 <body>
 	<header class="header">
@@ -161,7 +162,7 @@
 
 
 
-	<script>
+	<!-- <script>
 jQuery(document).ready(function() {
 jQuery("a.scrollto").click(function () {
 elementClick = jQuery(this).attr("href")
@@ -170,6 +171,11 @@ jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destinatio
 return false;
 });
 });
-</script>
+</script> -->
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 700
+});
+  </script>
 </body>
 </html>
