@@ -1,0 +1,476 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: 0;
+}
+
+.header-burger {
+    display: none;
+}
+
+.header-menu{
+    display: flex;
+/*    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+
+    justify-content: space-between;
+    padding: 34px 15px 40px 15px;
+    border-bottom: 1px solid #828282;
+    align-items: center;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 945px
+
+}
+
+.header-menu a {
+    text-decoration: none;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    text-align: justify;
+}
+
+.header-menu a:hover, .lang a:hover {
+    color: #070707;
+    transition: all 1s;
+}
+
+.container {
+    max-width: 945px;
+    margin: 0 auto;
+    padding: 0 15px;
+/*    border: 1px solid red;
+*/}
+
+
+
+/*.header-menu a{
+    width: 20% container;
+}
+*/
+
+/*.menu {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    align-items:center;
+    justify-content:center;
+    max-width: 900px;
+}*/
+
+/*.header-desription {
+    margin-top: 122px;
+}*/
+
+.flex1 h1, .flex1 p, .flex1 a{
+    margin: 0;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+.flex1 h1 {
+    font-family: Gilroy-Bold;
+    font-size: 47px;
+    line-height: 59px;
+}
+
+.descr{
+    align-self: flex-end;
+}
+
+.lang {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    /*line-height: 20px;*/
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.lang a{
+    text-decoration: none;
+    color: #828282;
+}
+
+
+/*PHOTO*/
+/*.myself img {
+max-width: 100%; 
+width: 950px;
+height: 387px;
+object-fit: cover; 
+object-position: top;
+overflow: hidden;
+}
+*/
+.my-photo {
+    background-image: url(https://i.ibb.co/VjfD7Wf/myself.jpg);
+    background-position: 0% 45%;
+    background-size: cover;
+    width: 100%;
+    height: 387px;
+    margin-top: 60px;
+    margin-bottom: 104px;
+}
+
+/*ABOUT ME*/
+.about-me, .portfolio {
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me h2 {
+    padding-top: 120px;
+    margin-bottom: 35px;
+}
+
+.about-me p {
+    margin-bottom: 51px;
+}
+
+.am-last {
+    padding-bottom: 110px;
+}
+
+/*SKILLS*/
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    padding-top: 91px;
+    margin-bottom: 69px;
+}
+
+.sk-in {
+    margin-bottom: 94px;
+}
+
+.br {
+    padding-bottom: 17px;
+}
+
+.progs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #828282;
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 110px;
+}
+
+.ps, .ai, .ae, .fig {
+    text-align: center;
+/*    display: flex;
+*//*    flex-direction: column;
+*//*    justify-content: center;
+*/}
+
+/*PORTFOLIO*/
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h2 {
+    padding-top: 114px;
+    margin-bottom: 64px;
+}
+
+.portfolio img {
+    max-width: 100%; 
+    width: 950px;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+
+.portfolio a {
+    display: inline-block;
+    margin-bottom: 107px;
+    color: #070707;
+}
+
+/*FOOTER*/
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info h2 {
+    margin-top: 114px;
+    margin-bottom: 37px;
+}
+
+.footer-info p {
+    margin-bottom: 38px;
+}
+
+.btn {
+    padding: 13px 28px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    transition: all .4s;
+}
+
+.btn:hover {
+    border-color: black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn {
+    margin-bottom: 86px;
+}
+
+.icons {
+    max-width: 342px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.like {
+    padding-bottom: 129px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+@media (max-width:  767px) {
+
+    .header-menu,
+    .lang {
+        display: none
+    }
+
+    .flex1 {
+        display: block;
+    }
+
+    .flex1 h1 {
+        padding-bottom: 34px;
+    }
+
+    .header-burger {
+        display: block
+    }
+
+    body
+        {     
+          overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+        }
+
+        a
+        {
+          text-decoration: none;
+          color: #828282;
+          
+          transition: color 0.3s ease;
+        }
+
+        a:hover
+        {
+          color: #090909;
+        }
+
+        #menuToggle
+        {
+          display: block;
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          
+          z-index: 1;
+          
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        #menuToggle input
+        {
+          display: block;
+          width: 40px;
+          height: 32px;
+          position: absolute;
+          top: -7px;
+          left: -5px;
+          
+          cursor: pointer;
+          
+          opacity: 0; /* hide this */
+          z-index: 2; /* and place it over the hamburger */
+          
+          -webkit-touch-callout: none;
+        }
+
+        /*
+         * Just a quick hamburger
+         */
+        #menuToggle span
+        {
+          display: block;
+          width: 33px;
+          height: 4px;
+          margin-bottom: 5px;
+          position: relative;
+          
+          background: #070707;
+          border-radius: 3px;
+          
+          z-index: 1;
+          
+          transform-origin: 4px 0px;
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      opacity 0.55s ease;
+        }
+
+        #menuToggle span:first-child
+        {
+          transform-origin: 0% 0%;
+        }
+
+        #menuToggle span:nth-last-child(2)
+        {
+          transform-origin: 0% 100%;
+        }
+
+        /* 
+         * Transform all the slices of hamburger
+         * into a crossmark.
+         */
+        #menuToggle input:checked ~ span
+        {
+          opacity: 1;
+          transform: rotate(45deg) translate(-2px, -1px);
+          background: #232323;
+        }
+
+        /*
+         * But let's hide the middle one.
+         */
+        #menuToggle input:checked ~ span:nth-last-child(3)
+        {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        /*
+         * Ohyeah and the last one should go the other direction
+         */
+        #menuToggle input:checked ~ span:nth-last-child(2)
+        {
+          opacity: 1;
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+
+        /*
+         * Make this absolute positioned
+         * at the top left of the screen
+         */
+        #menu
+        {
+          position: absolute;
+          width: 300px;
+          margin: -170px 0 0 0;
+          padding: 50px;
+          padding-top: 125px;
+          right: -100px;
+          
+          background: #ededed;
+          list-style-type: none;
+          -webkit-font-smoothing: antialiased;
+          /* to stop flickering of text in safari */
+          
+          transform-origin: 0% 0%;
+          transform: translate(100%, 0);
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        }
+
+        #menu li
+        {
+          padding: 10px 0;
+          font-size: 22px;
+
+        }
+
+        /*
+         * And let's fade it in from the left
+         */
+        #menuToggle input:checked ~ ul
+        {
+          transform: none;
+          opacity: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+          #menu {
+            transform: none;
+            opacity: 0;
+
+            transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+          }
+        }
+
+}
